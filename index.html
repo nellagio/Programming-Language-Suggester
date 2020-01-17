@@ -1,98 +1,104 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-      <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery.js"></script>
-    <script src="js/scripts.js"></script>
-<title>Programming Survey</title>
-      </head>
+
+<head>
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Programming Survey</title>
+</head>
 
 <body>
 
   <!-- question div -->
   <div class="container">
     <h1>Which programming language should you learn?</h1>
-    <h6>results may vary-not responsible for awesome choices made.</h6>
+    <h6>*results may vary - not responsible for awesome choices made*
+    </h6>
     <!-- question one -->
     <h2>Do you enjoy designing colorful projects?</h2>
 
     <div class="radio">
       <label>
-        <input type="radio" name="question" value="true">
+        <input type="radio" name="question-one" value="true">
         True
       </label>
     </div>
 
     <div class="radio">
       <label>
-        <input type="radio" name="question" value="false">
+        <input type="radio" name="question-one" value="false">
         False
       </label>
     </div>
-<!-- question 2 -->
-<h2>Do you enjoy creating from scratch?</h2>
-<div class="radio">
-  <label>
-    <input type="radio" name="question" value="true">
-    Love it!
-  </label>
-</div>
+    <!-- question 2 -->
+    <h2>Do you enjoy creating from scratch?</h2>
+    <div class="radio">
+      <label>
+        <input type="radio" name="question-two" value="true">
+        Love it!
+      </label>
+    </div>
 
-<div class="radio">
-  <label>
-    <input type="radio" name="question" value="false">
-    I like <em>some</em> structure.
-  </label>
-<!--  question 3 -->
-<h2>Do you prefer "-" to "_"?</h2>
+    <div class="radio">
+      <label>
+        <input type="radio" name="question-two" value="false">
+        I like <em>some</em> structure.
+      </label>
+      <!--  question 3 -->
+      <h2>Do you prefer "-" to "_"?</h2>
 
-<div class="radio">
-  <label>
-    <input type="radio" name="question" value="true">
-    -
-  </label>
-</div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="question-three" value="true">
+          -
+        </label>
+      </div>
 
-<div class="radio">
-  <label>
-    <input type="radio" name="question" value="false">
-    _
-  </label>
-<!-- question 4 -->
-<h2>Do you want to work remotely from the mountains?</h2>
-<div class="radio">
-  <label>
-    <input type="radio" name="question" value="true">
-    To the mountain cafe I go!
-  </label>
-</div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="question-three" value="false">
+          _
+        </label>
+        <!-- question 4 -->
+        <h2>Do you want to work remotely from the mountains?</h2>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question-four" value="true">
+            To the mountain cafe I go!
+          </label>
+        </div>
 
-<div class="radio">
-  <label>
-    <input type="radio" name="question" value="false">
-    To the office I go.
-  </label>
-<!-- question 5 -->
-<h2>Do you prefer Windows to Linux based opperating systems?</h2>
-<div class="radio">
-  <label>
-    <input type="radio" name="question" value="true">
-    Windows all the way!
-  </label>
-</div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question-four" value="false">
+            To the office I go.
+          </label>
+          <!-- question 5 -->
+          <h2>Do you prefer Windows to Linux based operating systems?</h2>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question-five" value="true">
+              Windows all the way!
+            </label>
+          </div>
 
-<div class="radio">
-  <label>
-    <input type="radio" name="question" value="false">
-    What Windows?
-  </lable>
-
-<!-- answer div -->
-<div class="answer">
-<h1>You should pursue learning:</h1>
-</div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question-five" value="false">
+              What Windows?
+              </label>
+              
+              <br><button class="button">Submit results</button>
+              <!-- answer div TODO: PUT LINKS IN TO WEBSITES!!! -->
+              <div class="answer">
+                <h1>You should pursue learning:</h1>
+                <p class="python lan_name">Python!</p>
+                <p class="javascript lan_name">JavaScript!</p>
+                <p class="HTML lan_name">HTML!</p>
+              </div>
 
 </body>
 

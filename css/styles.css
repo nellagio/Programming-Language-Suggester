@@ -1,7 +1,14 @@
 .container {
   background-color: blanchedalmond;
+  text-align: center;
 }
 
 .answer {
   display: none;
+  text-align: center; 
+}
+
+.lan_name {
+  text-size-adjust: 12px;
+  color: rgb(182, 5, 5);
 }
