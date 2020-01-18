@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  console.log('ready');
+
   $(".survey").submit(function(event) {
 
     // getting values from form.
@@ -13,6 +13,13 @@ $(document).ready(function() {
 
     var question_five = $("input:radio[name=question-five]:checked").val();
 
+    var total = function(question1, question2, question3, question4, question5){ 
+      return question1 + question2 + question3 + question4 + question5
+    };
+
+    var answer_total = ("total");
+
+    console.log(total());
 
     event.preventDefault();
   });
