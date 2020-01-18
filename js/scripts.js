@@ -1,7 +1,18 @@
 $(document).ready(function() {
   console.log('ready');
   $(".survey").submit(function(event) {
-    console.log('hello');
+
+    // getting values from form.
+    var question_one = $("input:radio[name=question-one]:checked").val();
+
+    var question_two = $("input:radio[name=question-two]:checked").val();
+    
+    var question_three = $("input:radio[name=question-three]:checked").val();
+
+    var question_four = $("input:radio[name=question-four]:checked").val();
+
+    var question_five = $("input:radio[name=question-five]:checked").val();
+
 
     event.preventDefault();
   });
