@@ -2,28 +2,57 @@ $(document).ready(function() {
 
   $(".survey").submit(function(event) {
 
-    // getting values from form.
-    var question_one = $("input:radio[name=question-one]:checked").val();
-
-    var question_two = $("input:radio[name=question-two]:checked").val();
+    function show_alert() {
+      alert("Git ready to code!");
+    }
     
-    var question_three = $("input:radio[name=question-three]:checked").val();
+    // getting values from form.
+    var question_one = $("input:radio[name=question_one]:checked").val();
 
-    var question_four = $("input:radio[name=question-four]:checked").val();
+    var question_two = $("input:radio[name=question_two]:checked").val();
+    
+    var question_three = $("input:radio[name=question_three]:checked").val();
 
-    var question_five = $("input:radio[name=question-five]:checked").val();
+    var question_four = $("input:radio[name=question_four]:checked").val();
 
-    var total = function(question1, question2, question3, question4, question5){ 
-      return question1 + question2 + question3 + question4 + question5
-    };
+    var question_five = $("input:radio[name=question_five]:checked").val();
 
-    var answer_total = ("total");
+    var total = 0;
 
-    console.log(total());
+    if (question_one === "true"){
+      total = total + 1;
+    }
+
+    if (question_two === "true"){
+      total = total + 1;
+    }
+
+    if (question_three === "true"){
+      total = total + 1;
+    }
+
+    if (question_four === "true"){
+      total = total + 1;
+    }
+
+    if (question_five === "true"){
+      total = total + 1;
+    }
+
+    $(".answer_head").removeClass("none")
+
+    if (total < 1) {
+      $("#html").removeClass("none")
+    }
+
+    else if (total <= 2) {
+      $("#javascript").removeClass("none")
+    }
+
+    else {
+      $("#python").removeClass("none")
+    }
 
     event.preventDefault();
   });
 });
-
-
-// on submit (.click), alert "git ready to code!", show specific language class from the results from total value captured} 

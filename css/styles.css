@@ -1,12 +1,22 @@
 .container {
   background-color: blanchedalmond;
   text-align: center;
-  text: black;
 }
 
 .answer {
-  display: none;
   text-align: center; 
+}
+
+.python {
+  
+}
+
+.answer_head {
+
+}
+
+.none {
+  display:none;
 }
 
 .lan_name {
