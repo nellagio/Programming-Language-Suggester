@@ -41,6 +41,8 @@ $(document).ready(function() {
 
     $(".answer_head").removeClass("none")
 
+    $(".lan_name").addClass("none")
+
     if (total < 1) {
       $("#html").removeClass("none")
     }
